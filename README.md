@@ -3,24 +3,24 @@ Art gallery - front end application
 
 Aurea is a responsive front-end web application designed to showcase artworks in a modern digital gallery format. It provides an interactive user experience with features like theme toggling, artwork slideshows, modals for detailed artwork views, and basic authentication simulation using browser storage.
 
-##Features
-*Light and dark theme toggle with preference persistence
-*Artwork slideshow with next/previous navigation
-*Keyboard navigation support (arrow keys and escape)
-*Artwork detail modal with artist information
-*Login and registration system (client-side simulation)
-*Password visibility toggle
-*Contact artist and meeting scheduling form
-*Responsive layout for different screen sizes
+## Features
+* Light and dark theme toggle with preference persistence
+* Artwork slideshow with next/previous navigation
+* Keyboard navigation support (arrow keys and escape)
+* Artwork detail modal with artist information
+* Login and registration system (client-side simulation)
+* Password visibility toggle
+* Contact artist and meeting scheduling form
+* Responsive layout for different screen sizes
 
-##Technologies Used
-*HTML5
-*CSS3
-*JavaScript (Vanilla JS)
-*Font Awesome
-*Browser LocalStorage API
+## Technologies Used
+* HTML5
+* CSS3
+* avaScript (Vanilla JS)
+* Font Awesome
+* Browser LocalStorage API
 
-##Project Structure
+## Project Structure
 Aurea/
 ├── index.html
 ├── gallery.html
@@ -30,11 +30,11 @@ Aurea/
 ├── script.js
 └── README.md
 
-##Authentication Note
+## Authentication Note
 This project uses browser localStorage to simulate user login and registration.
 This implementation is for demonstration and learning purposes only and should not be used in production environments, as client-side storage is not secure.
 
-##Artwork Interaction
+## Artwork Interaction
 *Artworks are displayed in a slideshow format
 *Clicking an artwork opens a modal with detailed information
 *Artwork data is dynamically loaded using data-id attributes
