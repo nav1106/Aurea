@@ -21,6 +21,7 @@ Aurea is a responsive front-end web application designed to showcase artworks in
 * Browser LocalStorage API
 
 ## Project Structure
+```
 Aurea/
 ├── index.html
 ├── gallery.html
@@ -29,10 +30,10 @@ Aurea/
 ├── styles.css
 ├── script.js
 └── README.md
-
+```
 
 ## Authentication Note
-This project uses browser localStorage to simulate user login and registration.
+This project uses browser `localStorage` to simulate user login and registration.
 This implementation is for demonstration and learning purposes only and should not be used in production environments, as client-side storage is not secure.
 
 ## Artwork Interaction
@@ -47,10 +48,10 @@ This implementation is for demonstration and learning purposes only and should n
 
 ## JavaScript Concepts Used
 * DOM manipulation
-* Event listeners (click, submit, keydown)
-* querySelector and querySelectorAll
-* classList for dynamic styling
-* localStorage with JSON.parse() and JSON.stringify()
+* Event listeners (`click`, `submit`, `keydown`)
+* `querySelector` and `querySelectorAll`
+* `classList` for dynamic styling
+* `localStorage` with `JSON.parse()` and `JSON.stringify()`
 * Conditional rendering of UI elements
 * Keyboard accessibility handling
 
