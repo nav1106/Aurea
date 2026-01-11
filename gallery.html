@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Aurea</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Aurea</a>
+        </div>
+        <div class="nav-links">
+            <a href="gallery.html" class="active">Gallery</a>
+            
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="login.html" class="login-button">Log In</a>
+            <div class="user-profile hidden">
+                <img src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1" alt="Profile">
+                <div class="dropdown">
+                    <a href="#" id="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery View -->
+    <main class="gallery-view">
+        <div class="artwork-slideshow">
+            <button class="slide-nav prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="artwork current" data-id="1">
+                <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968" alt="Abstract Painting">
+                <div class="artwork-info">
+                    <h3>Abstract Dimensions</h3>
+                    <p>By Emma Rodriguez</p>
+                </div>
+            </div>
+            
+            <div class="artwork" data-id="2">
+                <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119" alt="Landscape">
+                <div class="artwork-info">
+                    <h3>Mountain Serenity</h3>
+                    <p>By David Chen</p>
+                </div>
+            </div>
+            
+            <div class="artwork" data-id="3">
+                <img src="https://img.artpal.com/259121/6-19-10-30-7-39-35m.jpg" alt="Portrait">
+                <div class="artwork-info">
+                    <h3>Contemplation</h3>
+                    <p>By Sophia Mendes</p>
+                </div>
+            </div>
+            
+            <div class="artwork" data-id="4">
+                <img src="https://images.unsplash.com/photo-1549490349-8643362247b5" alt="Modern Art">
+                <div class="artwork-info">
+                    <h3>Urban Patterns</h3>
+                    <p>By Marcus Wong</p>
+                </div>
+            </div>
+            
+            <div class="artwork" data-id="5">
+                <img src="https://images.unsplash.com/photo-1573221566340-81bdde00e00b" alt="Sculpture">
+                <div class="artwork-info">
+                    <h3>Ethereal Light</h3>
+                    <p>By Naomi Clark</p>
+                </div>
+            </div>
+            
+            <div class="artwork" data-id="6">
+                <img src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7" alt="Photography">
+                <div class="artwork-info">
+                    <h3>Silent Witness</h3>
+                    <p>By James Peterson</p>
+                </div>
+            </div>
+
+            <div class="artwork" data-id="7">
+                <img src="Screenshot 2025-05-21 120418.png" alt="Portrait">
+                <div class="artwork-info">
+                    <h3>Memories</h3>
+                    <p>By Jiya Sachdeva</p>
+                </div>
+            </div>
+            
+            <button class="slide-nav next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- Artwork Modal -->
+    <div class="artwork-modal" id="artwork-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-artwork">
+                <img id="modal-image" src="" alt="Artwork">
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-title">Artwork Title</h2>
+                <h3 id="modal-artist">Artist Name</h3>
+                <p id="modal-description">Artwork description goes here. This includes details about the piece, medium, and year created.</p>
+                <div class="modal-actions">
+                    <button class="btn-primary" id="contact-artist">
+                        Contact Artist
+                    </button>
+                </div>
+                
+                <!-- Meeting Scheduler Form -->
+                <div class="meeting-form hidden">
+                    <h4>Schedule a Meeting with the Artist</h4>
+                    <form id="schedule-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message to Artist</label>
+                            <textarea id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Aurea</h3>
+                <p>A Virtual Art Experience</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="login.html">Log In</a>
+                <a href="register.html">Register</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aurea Virtual Art Gallery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

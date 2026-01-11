@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurea - Virtual Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Aurea</a>
+        </div>
+        <div class="nav-links">
+            <a href="gallery.html">Gallery</a>
+            
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="login-container">
+                <a href="login.html" class="login-button">Log In</a>
+                <div class="user-profile hidden">
+                    <img src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1" alt="Profile">
+                    <div class="dropdown">
+                        <a href="#" id="logout">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content - Slides -->
+    <main>
+        <!-- Slide 1 - Brand Name -->
+        <section class="slide" id="slide-brand">
+            <div class="slide-content">
+                <h1>Aurea</h1>
+                <p>A Virtual Art Experience</p>
+            </div>
+        </section>
+
+        <!-- Slide 2 - How to Use -->
+        <section class="slide" id="slide-how-to">
+            <div class="slide-content">
+                <h2>How to Experience Aurea</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Browse the Gallery</h3>
+                            <p>Explore our virtual gallery space to discover amazing artwork from talented artists around the world.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Interact with Art</h3>
+                            <p>Click on any artwork to view details, connect with artists, and schedule meetings to discuss potential purchases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3 - About Us -->
+        <section class="slide" id="slide-about">
+            <div class="slide-content">
+                <h2>About Us</h2>
+                <div class="about-container">
+                    <div class="about-image">
+                        <img src="aboutus.jpeg" alt="Art Gallery">
+                    </div>
+                    <div class="about-text">
+                        <p>Aurea is a virtual art gallery platform dedicated to connecting artists and art enthusiasts in a digital space. Through this, we are aiming to make art accessible to everyone, everywhere.</p>
+                        <p>Founded in 2025, we believe in the power of visual expression to transcend boundaries and create meaningful connections. Aurea provides a space where creativity can flourish and be admired.</p>
+                        <p>Visit our gallery to discover and celebrate the beauty of human creativity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Aurea</h3>
+                <p>A Virtual Art Experience</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="login.html">Log In</a>
+                <a href="register.html">Register</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aurea Virtual Art Gallery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
