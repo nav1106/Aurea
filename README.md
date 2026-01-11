@@ -23,11 +23,17 @@ Aurea is a responsive front-end web application designed to showcase artworks in
 ## Project Structure
 Aurea/
 ├── index.html
+
 ├── gallery.html
+
 ├── login.html
+
 ├── register.html
+
 ├── styles.css
+
 ├── script.js
+
 └── README.md
 
 ## Authentication Note
